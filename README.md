@@ -53,10 +53,6 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
     ```bash
     php artisan migrate
     ```
-    Jika Anda ingin mengisi database dengan data dummy (jika ada seeder), Anda bisa menambahkan flag `--seed`:
-    ```bash
-    php artisan migrate --seed
-    ```
 
 7.  **Instal Dependensi JavaScript:**
     Gunakan NPM (Node Package Manager) untuk menginstal dependensi frontend.
@@ -65,19 +61,18 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
     ```
 
 8.  **Kompilasi Aset Frontend:**
-    Gunakan Vite untuk mengkompilasi aset CSS dan JavaScript. Untuk pengembangan, gunakan perintah `dev` yang akan memantau perubahan file.
+    Gunakan Vite untuk mengkompilasi aset CSS dan JavaScript. Untuk pengembangan, gunakan perintah `build` yang akan memantau perubahan file.
     ```bash
-    npm run dev
+    npm run build
     ```
-    Biarkan perintah ini berjalan di terminal terpisah saat Anda mengembangkan. Untuk produksi, gunakan `npm run build`.
 
 9.  **Jalankan Server Pengembangan Lokal:**
     Gunakan Artisan untuk menjalankan server pengembangan lokal Laravel.
     ```bash
-    php artisan serve
+    composer run dev
     ```
 
 10. **Akses Aplikasi:**
-    Buka browser Anda dan kunjungi alamat yang ditampilkan oleh perintah `php artisan serve` (biasanya `http://localhost:8000`).
+    Buka browser Anda dan kunjungi alamat yang ditampilkan oleh perintah `composer run dev` (biasanya `http://localhost:8000`).
 
 Proyek Anda sekarang seharusnya sudah berjalan di lingkungan lokal.
