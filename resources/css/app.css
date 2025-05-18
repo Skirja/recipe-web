@@ -1,3 +1,4 @@
+@import 'trix/dist/trix.css';
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -8,4 +9,20 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Custom Trix Editor List Styling Fix */
+.trix-content ul {
+    list-style-type: disc !important; /* Ensure disc bullets are shown */
+    margin-left: 1.25rem !important; /* Add some left margin for indentation */
+}
+
+.trix-content ol {
+    list-style-type: decimal !important; /* Ensure numbers are shown */
+    margin-left: 1.25rem !important; /* Add some left margin for indentation */
+}
+
+.trix-content li {
+    display: list-item !important; /* Ensure li behaves as a list item */
+    margin-bottom: 0.25em; /* Optional: add some space between list items */
 }
