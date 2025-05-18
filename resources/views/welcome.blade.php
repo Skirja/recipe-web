@@ -19,15 +19,7 @@
         </div>
     </div>
 
-    <!-- Main Banner/Carousel Placeholder -->
-    <div class="container mx-auto px-4 mt-8">
-        <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-8 rounded-lg shadow-xl text-white text-center">
-            <h2 class="text-4xl font-bold mb-3">Resep Abon Spesial!</h2>
-            <p class="mb-6 text-lg">#BelajarMasakBarengKomunitas #KelasAbon. Periode Posbar: 28 April - 18 Mei!</p>
-            <a href="#" class="bg-white text-purple-600 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-150">Lihat Selengkapnya</a>
-        </div>
-    </div>
-
+    
     <div class="container mx-auto px-4 py-12">
         <!-- Pencarian Populer -->
         @if(!empty($popularSearchTerms))
